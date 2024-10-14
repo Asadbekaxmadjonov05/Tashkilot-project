@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ant-menu-item-selected{
+    background-color: rgb(141, 120, 2)  !important;
+}
+
+.ant-btn-color-primary{
+    background-color: rgb(141, 120, 2) !important;
+}
+.ant-spin-dot-holder{
+color:rgb(141, 120, 2)  !important ;
+}

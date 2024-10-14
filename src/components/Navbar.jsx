@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { UsergroupAddOutlined, BankOutlined, LineOutlined} from '@ant-design/icons';
 import { Menu } from 'antd';
+import { Link } from 'react-router-dom';
 const items = [
   {
     key: '1',
@@ -9,7 +10,7 @@ const items = [
     children: [
       {
         key: '11',
-        label: "Tashkilotlar bo'limi ",
+        label: <Link to={'/'}>Tashkilotlar bo'limi </Link>,
         icon: <LineOutlined />
       }
     ],
@@ -21,13 +22,13 @@ const items = [
     children: [
       {
         key: '21',
-        label: 'Poytaxt foydalanuvchilari',
+        label: <Link to={'/capital-users'}>Poytaxt foydalanuvchilari</Link>,
         icon: <LineOutlined />
 
       },
       {
         key: '22',
-        label: 'Viloyat foydalanuvchilari',
+        label: <Link to={'/region-users'}>Viloyat foydalanuvchilari</Link>,
         icon: <LineOutlined />
       }
     ],
@@ -68,6 +69,7 @@ const Navbar = () => {
   };
   return (
         <Menu
+        className='p-2'
         theme='dark'
           mode="inline"
           openKeys={stateOpenKeys}

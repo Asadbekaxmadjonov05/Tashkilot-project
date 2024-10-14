@@ -1,3 +1,4 @@
 import Organization from "./Organization";
-import Users from "./Users";
-export {Organization, Users}
+import CapitalUsers from "./CapitalUsers";
+import RegionUsers from "./RegionUsers";
+export {Organization, CapitalUsers, RegionUsers}
